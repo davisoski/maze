@@ -18,6 +18,12 @@ public class Map {
 
 	// Muros en forma de esquinas
 	private Image L1, L2, L3, L4;
+	
+	//Muros en forma de esquinas centrados
+	private Image LHM1, LHM2, LHM3, LHM4;
+	private Image LVM1, LVM2, LVM3, LVM4;
+
+	
 
 	// Muros horizontales, verticales y T (tes para las uniones)
 	private Image hInferior, hSuperior, vIzquierda, vDerecha, horizontal,
@@ -56,6 +62,29 @@ public class Map {
 		L3 = img.getImage();
 		img = new ImageIcon(ruta + "L4.png");
 		L4 = img.getImage();
+		
+		// Muros en forma de esquinas centrados
+		//Horizontal
+		img = new ImageIcon(ruta + "LHMitadDerechaArriba.png");
+		LHM1 = img.getImage();
+		img = new ImageIcon(ruta + "LHMitadDerechaAbajo.png");
+		LHM2 = img.getImage();
+		img = new ImageIcon(ruta + "LHMitadIzquierdaArriba.png");
+		LHM3 = img.getImage();
+		img = new ImageIcon(ruta + "LHMitadIzquierdaAbajo.png");
+		LHM4 = img.getImage();
+		
+		// Muros en forma de esquinas centrados
+		//Vertical
+		img = new ImageIcon(ruta + "LVMitadDerechaArriba.png");
+		LVM1 = img.getImage();
+		img = new ImageIcon(ruta + "LVMitadDerechaAbajo.png");
+		LVM2 = img.getImage();
+		img = new ImageIcon(ruta + "LVMitadIzquierdaArriba.png");
+		LVM3 = img.getImage();
+		img = new ImageIcon(ruta + "LVMitadIzquierdaAbajo.png");
+		LVM4 = img.getImage();
+		
 
 		// Puntos y Power Pellets (Punto grande)
 		img = new ImageIcon(ruta + "dot.png");
@@ -162,6 +191,39 @@ public class Map {
 
 	public Image getVertical() {
 		return vertical;
+	}
+	
+	
+	public Image getLHM1() {
+		return LHM1;
+	}
+
+	public Image getLHM2() {
+		return LHM2;
+	}
+
+	public Image getLHM3() {
+		return LHM3;
+	}
+
+	public Image getLHM4() {
+		return LHM4;
+	}
+
+	public Image getLVM1() {
+		return LVM1;
+	}
+
+	public Image getLVM2() {
+		return LVM2;
+	}
+
+	public Image getLVM3() {
+		return LVM3;
+	}
+
+	public Image getLVM4() {
+		return LVM4;
 	}
 
 	public String getMap(int x, int y) {
